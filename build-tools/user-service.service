@@ -3,11 +3,10 @@ Description=User Service
 After=network.target
 
 [Service]
-ExecStart=/home/mutu/projects/Go-Systemd-Micro-Service/bin/user-service
+ExecStart=/home/mutu/projects/Go-Systemd-Micro-Service/user-service/bin/user-serviceBinary
 Restart=on-failure
-EnvironmentFile=/home/mutu/projects/Go-Systemd-Micro-Service/build-tools/.env
-WorkingDirectory=/home/mutu/projects/Go-Systemd-Micro-Service  # ← Your root project folder
-User=mutu  # Or your Linux username
+WorkingDirectory=/home/mutu/projects/Go-Systemd-Micro-Service/user-service
+User=mutu
 
 [Install]
 WantedBy=multi-user.target

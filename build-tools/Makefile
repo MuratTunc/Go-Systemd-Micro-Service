@@ -1,3 +1,6 @@
+# Environment file and variables
+ENV_FILE := .env
+
 SERVICE_NAME := user-service
 SYSTEMD_FILE := $(SERVICE_NAME).service
 TARGET_PATH := /etc/systemd/system/$(SYSTEMD_FILE)
