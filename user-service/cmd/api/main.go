@@ -28,6 +28,7 @@ func corsMiddleware(next http.Handler) http.Handler {
 
 // Health check handler
 func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	log.Println("✅ /healthcheck called — sending 'success' to client")
 	fmt.Fprintln(w, "success")
 }
 
